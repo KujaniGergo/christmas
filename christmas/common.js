@@ -168,6 +168,14 @@ function createNewElement(obj, form, array) {
  * @returns {string}
  */
 function mapMuszak(muszakValue){
-    console.log(muszakValue);
-    return muszakValue;
+    if(muszakValue === "1"){
+        return "Délelöttös"
+    }
+    if(muszakValue === "2"){
+        return "Délutános"
+    }
+    if(muszakValue === "3"){
+        return "Éjszakai"
+    }
+    return muszakValue
 }
